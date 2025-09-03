@@ -26,10 +26,10 @@ h3 {
 
 /* Hero */
 .hero {
-  height: 75vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   text-align: center;
   padding: 2rem;
