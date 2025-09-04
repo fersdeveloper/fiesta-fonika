@@ -29,7 +29,7 @@ h3 {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   text-align: center;
   padding: 2rem;
@@ -71,7 +71,6 @@ h3 {
 
 .hero p {
   font-size: 1.2rem;
-  margin-bottom: 2rem;
   z-index: 2;
   position: relative;
 }
@@ -83,6 +82,9 @@ h3 {
 }
 
 .btn {
+  display: inline-block;
+  max-width: 100%;
+  box-sizing: border-box;
   background: var(--verde);
   color: white;
   padding: 0.8rem 1.5rem;
@@ -92,12 +94,7 @@ h3 {
   transition: transform 0.3s, box-shadow 0.3s;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   white-space: nowrap; /* evita que el texto se divida */
-}
-
-.direccion .btn {
-  display: inline-block;
-  max-width: 100%;
-  box-sizing: border-box;
+  margin-bottom: 0.5rem;
 }
 
 .btn:hover {
@@ -120,6 +117,7 @@ section {
   color: white;
   padding: 6rem 2rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 75vh;
@@ -140,38 +138,26 @@ section {
   animation: fadeIn 2s ease-in-out;
 }
 
-/* Fiesta */
-.fiesta {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: #fafafa;
-  color: var(--negro);
-  min-height: 40vh;
-}
-
-/* Showcase */
-.showcase {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: var(--gradiente);
-  color: white;
-  min-height: 35vh;
-}
-
-.showcase ul {
+.concepto ul {
   list-style: none;
   padding: 0;
   font-size: 1.3rem;
   line-height: 2rem;
 }
 
+/* Fiesta */
+.fiesta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--gradiente);
+  color: white;
+  min-height: 40vh;
+}
+
 /* Enlaces discretos (reutilizados) */
-.showcase a,
-.direccion a,
+.concepto a,
 .proximos-eventos a,
 footer a {
   color: inherit;
@@ -179,15 +165,12 @@ footer a {
   transition: color 0.3s;
 }
 
-.showcase a:hover,
-.direccion a:hover,
+.concepto a:hover,
 .proximos-eventos a:hover,
 footer a:hover {
   color: var(--amarillo);
 }
 
-/* Dirección y Próximos eventos - mismas bases, menos separación */
-.direccion,
 .proximos-eventos {
   background: #f7f7f7;
   color: var(--negro);
@@ -250,7 +233,6 @@ footer {
 }
 
 .estrella {
-  display: inline-block;
   margin: 0 5px;
   animation: float 2.5s ease-in-out infinite;
 }
