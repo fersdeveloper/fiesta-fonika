@@ -113,7 +113,7 @@ section {
 /* Fiesta */
 .fiesta {
   position: relative;
-  background-image: url('../assets/flyer.png');
+  background-image: url('../assets/flyer.jpeg');
   background-position: center top;
   background-repeat: repeat; /* por defecto, se repetirá en pantallas grandes */
   background-size: contain;
