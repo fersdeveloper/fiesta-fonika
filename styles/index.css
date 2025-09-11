@@ -113,15 +113,15 @@ section {
 /* Fiesta */
 .fiesta {
   position: relative;
-  background-image: url('../assets/flyer_2.jpeg');
-  background-position: center top;
+  background-image: url('../assets/flyer_v3.jpeg');
+  background-position: center center;
   background-repeat: repeat; /* por defecto, se repetirá en pantallas grandes */
-  background-size: cover;
-  min-height: 65vh;
+  background-size: contain;
+  height: 80vh;
 }
 
 /* Para dispositivos móviles */
-@media (max-width: 1366px) {
+@media (max-width: 760px) {
   .fiesta {
     background-position: center center;
     background-repeat: repeat-y; /* no repetir en móviles */
