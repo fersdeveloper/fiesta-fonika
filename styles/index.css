@@ -117,7 +117,7 @@ section {
   background-position: center center;
   background-repeat: repeat; /* por defecto, se repetirá en pantallas grandes */
   background-size: contain;
-  height: 80vh;
+  height: 100vh;
 }
 
 /* Para dispositivos móviles */
